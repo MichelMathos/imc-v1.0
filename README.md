@@ -1,6 +1,7 @@
 # Calculadora de IMC
 
-Se trata de um projeto-teste para mostrar habilidades básicas em HTML, CSS e Javascript.
+Se trata de um projeto-teste para mostrar habilidades básicas em HTML, CSS e Javascript.<br>
+* Disponível para visualização <a href="https://michelmathos.github.io/imc-v1.0/">aqui</a>
 
 ## Começando
 
