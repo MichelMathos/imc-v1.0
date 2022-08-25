@@ -31,7 +31,7 @@ h2 {
   box-shadow: 0px 0px 20px 2px #68b7fc;
 }
 input {
-  font-size: 120%;
+  //font-size: 120%;
   width: 65%;
   margin-top: 5px;
   padding: 10px;
@@ -58,7 +58,11 @@ button {
   background: linear-gradient(to left, darkorange, red);
   font-weight: bold;
 }
-
+label,
+input,
+p {
+  font-size: 120%;
+}
 p,
 label,
 h1 {
