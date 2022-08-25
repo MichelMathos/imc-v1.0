@@ -25,10 +25,10 @@ Fonte: <a href="https://www.uol.com.br/vivabem/faq/imc-como-calcular-tabela-dica
 
 ## Autor
 
-* Michel Matos
-* * <a href="https://github.com/MichelMathos">GitHub</a>
-* * <a href ="https://www.linkedin.com/in/michelmathos/">LinkedIn</a>
+* Michel Matos  <br> 
+<a href="https://github.com/MichelMathos">GitHub</a><br>
+<a href ="https://www.linkedin.com/in/michelmathos/">LinkedIn</a>
 
-## Data
+## Data do projeto
 
 * 08/08/2022 - 19:11
