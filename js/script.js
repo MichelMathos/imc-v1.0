@@ -12,12 +12,12 @@ function start() {
   handleButtonClick();
 }
 
-//Função para calcular IMC
-function calculateImc(weigth, height) {
-  return weigth / (height * height);
+// Função para calcular IMC
+function calculateImc(weight, height) {
+  return weight / (height * height);
 }
 
-//Função do clik do botão
+// Função do clique do botão
 function handleButtonClick() {
   var inputWeight = document.querySelector('#input-weight');
   var inputHeight = document.querySelector('#input-height');
@@ -33,33 +33,35 @@ function handleButtonClick() {
   displayDiagnostic();
 }
 
-//Função para calcular o grau de IMC
+// Função para calcular o grau de IMC
 function diagnosticImc() {
-  var result = parseFloat(document.querySelector('#imc-result').innerText);
+  var result = parseFloat(document.querySelector('#imc-result').textContent);
 
-  if (result >= 16 && result <= 16.9) {
+  if (result < 16.0) {
+    return 'Resultado inválido.';
+  } else if (result >= 16.0 && result <= 16.9) {
     return 'Muito abaixo do peso.';
-  } else if (result >= 17 && result <= 18.4) {
+  } else if (result >= 17.0 && result <= 18.4) {
     return 'Abaixo do peso.';
   } else if (result >= 18.5 && result <= 24.9) {
     return 'Peso normal.';
-  } else if (result >= 25 && result <= 29.9) {
+  } else if (result >= 25.0 && result <= 29.9) {
     return 'Acima do peso.';
-  } else if (result >= 30 && result <= 34.9) {
+  } else if (result >= 30.0 && result <= 34.9) {
     return 'Obesidade grau I.';
-  } else if (result >= 35 && result <= 40.0) {
+  } else if (result >= 35.0 && result <= 40.0) {
     return 'Obesidade grau II.';
-  } else if (result > 40) {
+  } else if (result > 40.0) {
     return 'Obesidade grau III.';
   } else {
     return 'Resultado inválido.';
   }
 }
 
-//Função para mostrar o diagnóstico
+// Função para mostrar o diagnóstico
 function displayDiagnostic() {
   var display = document.querySelector('#imc-diagnostic');
-  display.innerText = diagnosticImc();
+  display.textContent = diagnosticImc();
 }
 
 start();
